@@ -11,5 +11,13 @@
       href="https://api.instagram.com/oauth/authorize?client_id=2221813198207985&redirect_uri=https://groupliberal.github.io/instagram/auth&scope=user_profile&response_type=code&state={state}"
       >Entrar</a
     >
+
+    <button onclick="fect()">Entrar</button>
+
+    <script>
+      fetch('https://api.instagram.com/oauth/authorize?client_id=2221813198207985&redirect_uri=https://groupliberal.github.io/instagram/auth&scope=user_profile&response_type=code').then((j)=>{
+        console.log(j)
+      })
+    </script>
   </body>
 </html>
