@@ -9,7 +9,7 @@
     <script>
       const queryString = window.location.search;
       const urlParams = new URLSearchParams(queryString);
-      
+
 
       const url = "https://api.instagram.com/oauth/access_token";
       const clientId = "3532700117019827";
@@ -17,6 +17,8 @@
       const grantType = "authorization_code";
       const redirectUri = "https://groupliberal.github.io/instagram/auth";
       const code =  urlParams.get("code");
+
+      console.log(code);
 
       fetch(url, {
         method: "POST",
