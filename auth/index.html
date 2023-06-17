@@ -22,9 +22,6 @@
 
       fetch(url, {
         method: "POST",
-        headers: {
-          "Content-Type": "application/x-www-form-urlencoded",
-        },
         body: `client_id=${clientId}&client_secret=${clientSecret}&grant_type=${grantType}&redirect_uri=${redirectUri}&code=${code}`,
       })
         .then((response) => response.json())
